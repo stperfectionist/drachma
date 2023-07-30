@@ -50,7 +50,7 @@ endfunction ()
 
 function (enable_stack_trace target)
   if(STACK_TRACE)
-    set_property(TARGET ${target}
+    set_property(TARGET ${drachma}
       APPEND PROPERTY COMPILE_DEFINITIONS "STACK_TRACE")
     if (STATIC)
       set_property(TARGET "${target}"
